@@ -1,12 +1,36 @@
 <html>
+
 <head>
-<title>HILL.WIN1</title>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<meta name="viewport" content="width=device-width" />
+
+<title>示例</title>
 
 </head>
-<body>
 
-  <iframe src="https://hilllei.gitee.io/hill-website/" id="iframepage" name="iframepage" frameBorder=0 scrolling=no width="100%" height="100%" onLoad="iFrameHeight()" ></iframe> 
+<body style="margin:0">
+
+
+<iframe id="iv" style="width:100%; height:100%; border:0;margin:0;padding:0" src="https://hilllei.gitee.io/hill-website/"></iframe>
 
 </body>
+
 </html>
+
+<script type="text/javascript">
+
+var h = document.getElementById("btm").offsetHeight;
+
+var ivW = parseInt(document.getElementById("iv").style.width);
+
+var winH = window.innerHeight;
+
+if (window.innerWidth < (ivW + 10)) {
+
+winH = parseInt(winH * ivW / window.innerWidth);
+
+}
+
+document.getElementById("iv").style.height = (winH - h - 10) + "px";
+
+</script>
