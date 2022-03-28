@@ -8,7 +8,7 @@
 <title>丘山崇成</title>
 </head>
 
-<body>
+<body style="margin:0;padding:0;overflow:hidden" scroll="no">
 <iframe id="iv" style="width:100%; height:100%; border:0;margin:0;padding:0" src="https://hilllei.gitee.io/hill-website/"></iframe>
 </body>
 
@@ -16,10 +16,10 @@
 var h = document.getElementById("btm").offsetHeight;
 var ivW = parseInt(document.getElementById("iv").style.width);
 var winH = window.innerHeight;
-if (window.innerWidth < (ivW + 20)) {
+if (window.innerWidth < (ivW + 10)) {
 winH = parseInt(winH * ivW / window.innerWidth);
 }
-document.getElementById("iv").style.height = (winH - h - 20) + "px";
+document.getElementById("iv").style.height = (winH - h - 10) + "px";
 </script>
 
 </html>
