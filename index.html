@@ -16,10 +16,10 @@
 var h = document.getElementById("btm").offsetHeight;
 var ivW = parseInt(document.getElementById("iv").style.width);
 var winH = window.innerHeight;
-if (window.innerWidth < (ivW + 10)) {
+if (window.innerWidth < (ivW + 20)) {
 winH = parseInt(winH * ivW / window.innerWidth);
 }
-document.getElementById("iv").style.height = (winH - h - 10) + "px";
+document.getElementById("iv").style.height = (winH - h - 20) + "px";
 </script>
 
 </html>
